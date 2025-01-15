@@ -1,180 +1,357 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:800,900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/ad9cb0368b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="shortcut icon" href="images/z-icon.ico" type="image/x-icon">
-    <title>Zwe</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fa62c117c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Zwe Lwin Oo</title>
+  </head>
+  <body class="light" id="top">
+    <header class="header center">
+      <h3>
+        <a href="https://zwe-lwin-00.github.io/zwelwinoo.github.io/" class="link"
+          >Zwe</a
+        >
+      </h3>
 
-<body>
-    <div>
-    <div class="watermark">Zwe</div>
-    <div class="watermark">Zwe</div>
-    <div class="watermark">Zwe</div>
-    <div id="header-name-ldm">
-        <h1 id="name">Zwe Lwin Oo</h1>
-        <span id="switch-ldm-logo">
-            <div id="switch-container">
-                <img src="images/moon.svg" alt="">
-            </div>
-        </span>
-    </div>
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <!-- <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li> -->
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#educations">Educations</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#experiences">Experiences</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
+        </ul>
 
-    <p id="slogan">Developer</p>
-    
-    <div id="go-back-button"> <i class="fas fa-chevron-left"></i> Menu</div>
-    <section id="about-me-intro-section" class="section">
-        <p>A dedicated and skilled Senior Developer with extensive experience in designing and developing Java-based
-            business applications, including Core Banking APIs and Digital Financial Solutions. I have experience with various programming languages and specifically web technologies. I am currently available to hire.</p>
-        <a href="mailto:zwelwinoodevtech@gmail.com"> Get in touch</a>
-        <a href="https://drive.google.com/file/d/17_lGwTN8_ZFX1Jpr8khKtaSbLcA4t2HD/view?usp=drivesdk"> Download CV</a>
-    </section>
-    <!-- menu -->
-    <header id="menu">
-        <p id="about-me"> <a href="">About Me</a> </p>
-        <p id="skills"> <a href="">Skills</a> </p>
-        <p id="projects"> <a href="">Experiences</a> </p>
-        <p id="links"> <a href="">Links</a> </p>
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
 
-    </header> 
-    </div>
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
 
     <main>
+      <!-- About -->
+      <div class="about center">
+        <h1>Hi, I am <span class="about__name">Zwe Lwin Oo.</span></h1>
+        <h2 class="about__role">A Backend Developer.</h2>
+        <p class="about__desc">
+          I am a dedicated and skilled Senior Developer with extensive experience in designing and developing Java-based
+                business applications, including Core Banking APIs and Digital Financial Solutions. I have experience with various programming languages and specifically web technologies.
+        </p>
 
-    <!-- About me -->
-    <section id="about-me-section" class="section">
-			<h2>About me</h2>
-			<p>I am a dedicated and skilled Senior Developer with extensive experience in designing and developing Java-based
-                business applications, including Core Banking APIs and Digital Financial Solutions. I have experience with various programming languages and specifically web technologies. <br>
-			<a href="zwelwinoodevtech@gmail.com">Hire me</a></p>
-    </section>
-    
-    <!-- Skills -->
-    <section id="skills-section" class="section">
-        <h2>Skills</h2>
-        <article>
-            <section>
-                <h4>Languages<img class="section-logos" src="./images/programming.svg"></h4>
-                <ul>
-                    <li skill-description="Java"><object type="image/svg+xml" data="images/java.svg"></object>Java</li>
-                    <li skill-description="SQL"><object type="image/svg+xml" data="images/sql-file-format-symbol-svgrepo-com.svg"></object>SQL</li>
-                    <li skill-description="HTML 5"><object type="image/svg+xml" data="images/html5.svg" class="svg-logos"></object>HTML</li>
-                    <li skill-description="CSS"><object type="image/svg+xml" data="images/css3.svg"></object>CSS</li>
-                    <li skill-description="Javascript"><object type="image/svg+xml" data="images/javascript.svg"></object>JavaScript</li>
-                    <li skill-description="COBOL"><object type="image/svg+xml" data="images/cobol-svgrepo-com.svg"></object>COBOL</li>
-                    <li skill-description="VBA"><object type="image/svg+xml" data="images/vba-svgrepo-com.svg"></object>VBA</li>
-                    <li skill-description="Java"><object type="image/svg+xml" data="images/go.svg"></object>Go</li>
-                </ul>
-            </section>
-            
-            <section>
-                <h4>Frontend<img class="section-logos" src="./images/backend.svg"></h4>
-                <ul>
-                    <li skill-description="AngularJS"><object type="image/svg+xml" data="images/angularjs-svgrepo-com.svg"></object>AngularJS</li>
-                    <li skill-description="JQuery"><object type="image/svg+xml" data="images/jquery.svg"></object>Jquery</li>
-                    <li skill-description="Bootstrap"><object type="image/svg+xml" data="images/bootstrap.svg"></object>Bootstrap</li>
-                </ul>
-            </section>
-            
-            <section>
-                <h4>Databases<img class="section-logos" src="./images/phone.svg"></h4>
-                <ul>
-                    <li skill-description="Microsoft Sql Server"><object type="image/svg+xml" data="images/microsoft-sql-server-logo-svgrepo-com.svg"></object>Microsoft Sql Server</li>
-                    <li  skill-description="Mysql"><object type="image/svg+xml" data="images/mysql-svgrepo-com.svg"></object>Mysql</li>
-                    <li  skill-description="PostgreSQL"><object type="image/svg+xml" data="images/postgresql-logo-svgrepo-com.svg"></object>PostgreSQL</li>
-                </ul>
-            </section> 
-            
-            <section>
-                <h4>Tools<img class="section-logos" src="./images/desktop.svg"></h4>
-                <ul>
-                    <li skill-description="Git"><object type="image/svg+xml" data="images/git.svg"></object>Git</li>
-                    <li skill-description="Github"><object type="image/svg+xml" data="images/github.svg"></object>Github</li>
-                    <li skill-description="Apachetomcat"><object type="image/svg+xml" data="images/apachetomcat-svgrepo-com.svg"></object>Apachetomcat</li>
-                    <li skill-description="Apachejmeter"><object type="image/svg+xml" data="images/apachejmeter-svgrepo-com.svg"></object>Apachejmeter</li>
-                    <li skill-description="JasperReports"><object type="image/svg+xml" data="images/report-svgrepo-com.svg"></object>JasperReports</li>
-                </ul>
-            </section>
-            
-            <section>
-                <h4>Technologies<img class="section-logos" src="./images/database.svg"></h4>
-                <ul>
-                    <li  skill-description="JSON"><object type="image/svg+xml" data="images/json-file-svgrepo-com.svg"></object>JSON</li>
-                    <li  skill-description="XML"><object type="image/svg+xml" data="images/xml-svgrepo-com.svg"></object>XML</li>
-                    <li  skill-description="RESTful APIs"><object type="image/svg+xml" data="images/api-page-svgrepo-com.svg"></object>RESTful APIs</li>
-                    <li skill-description="Shellscript"><object type="image/svg+xml" data="images/application-x-shellscript-svgrepo-com.svg"></object>Shellscript</li>
-                </ul>
-            </section>
+        <div class="about__contact center">
+          <a href="https://drive.google.com/file/d/17_lGwTN8_ZFX1Jpr8khKtaSbLcA4t2HD/view?usp=drivesdk">
+            <span class="btn btn--outline">Resume</span>
+          </a>
 
-            <section>
-                <h4>Frameworks<img class="section-logos" src="./images/frontend.svg"></h4>
-                <ul>
-                    <li skill-description="Spring"><object type="image/svg+xml" data="images/spring-icon-svgrepo-com.svg"></object>Spring</li>
-                </ul>
-            </section>
+          <a
+            href="https://github.com/zwe-lwin-00"
+            aria-label="github"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
 
-        </article>
-        
-    </section>
-
-    <section id="projects-section" class="section">
-        <h1>Working Experiences</h1>
-        <h2>Myanmar Information Technology(MIT) - September 2022 - Present</h2>
-        <h2>Developer</h2>
-        <p># Developed and maintained Core Banking APIs and Digital Financial Solutions using Java and Spring Framework.<br>
-            # Conducted analysis, design, and customization of CRM and other business applications.<br>
-            # Provided on-site support for server deployments, ensuring seamless integration and issue resolution.<br>
-            # Led technical research and development initiatives using advanced technologies.<br>
-            # Conducted unit testing and supported UAT/SIT processes to ensure application quality.<br>
-            # Mentored junior developers and collaborated with team members to meet project goals.<br>
-            # Reported directly to the Project Manager and Team Leader, ensuring alignment with project timelines and objectives.<br></p>
-            <br><hr>
-
-
-        
-        <h2>ACE Data System - April 2022 - August 2022</h2>
-        <h2>On Job Training</h2>
-        <p># Worked on a Job Recruitment and Offering Management System project using JSP, Thymeleaf, JavaScript, and Bootstrap.<br>
-            # Utilized Spring MVC, Spring Boot, RDBMS, SQL, JDBC, JPA, and JasperReports for application development.<br></p>
-            <br><hr>
-
-
-
-        <h2>Mo Money Payment Myanmar - December 2021 - April 2022</h2>
-        <h2>Internship</h2>
-        <p># Gained hands-on experience with Core Java, Spring Framework, and database management.
-            <br></p>
-            <br><hr>
-
-    </section>
-
-
-    <!-- Links -->
-    <section id="links-section" class="section">
-
-        <h2>Links</h2>
-        <div>
-            <a href="mailto:zwelwinoodevtech@gmail.com" description="Mail"><i class="fas fa-envelope" onmouseover='displayDescriptionOnLinks("fa-envelope");'></i> Mail</a>
-            <a href="https://www.linkedin.com/in/zwelwinoo/" description="Linkedin"><i class="fab fa-linkedin-in"> </i>LinkedIn</a>
-            <a href="https://github.com/zwe-lwin-00" description="Github"><i class="fab fa-github"></i> GitHub</a>
-            <!-- <a href="https://stackoverflow.com/users/6744380/zwelwinoo" description="StackOverflow"><i class="fab fa-stack-overflow" ></i> stackoverflow</a>
-            <a href="https://www.facebook.com/zwelwinoo" description="Facebook"><i class="fab fa-facebook";> </i>  facebook</a>
-            <a href="https://twitter.com/zwelwinoo" description="Twitter"><i class="fab fa-twitter"></i> twitter</a> -->
-            
+          <a
+            href="#"
+            aria-label="linkedin"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
         </div>
+      </div>
+      <br>
+
+
+      <!-- Educations-->
+      <section id="educations" class="section educations">
+        <h2 class="section__title">Educations</h2>
+
+        <div class="educations__grid">
+          <div class="education">
+            <h3>Info Myanmar University</h3><br>
+            <h5>2017-2019</h5>
+            <p class="education__description">
+              Higher National Diploma in Software Computing
+            </p>
+          </div>
+
+
+          <div class="education">
+            <h3>Edinburgh Napier University</h3><br>
+            <h5>2019-2021</h5>
+            <p class="education__description">
+              BSc Computing
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Projects -->
+      <!-- <section id="projects" class="section projects">
+        <h2 class="section__title">Projects</h2>
+
+        <div class="projects__grid">
+          <div class="project">
+            <h3>Project 1</h3>
+            <p class="project__description">
+              Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
+              sapiente debitis labore sed ipsam Mollitia repellat illum quod
+              unde beatae Quis
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">SASS</li>
+              <li class="project__stack-item">TypeScript</li>
+              <li class="project__stack-item">React</li>
+            </ul>
+
+            <a
+              href="https://github.com"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://example.com"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Project 2</h3>
+            <p class="project__description">
+              Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
+              sapiente debitis labore sed ipsam Mollitia repellat illum quod
+              unde beatae Quis
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">SASS</li>
+              <li class="project__stack-item">TypeScript</li>
+              <li class="project__stack-item">React</li>
+            </ul>
+
+            <a
+              href="https://github.com"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://example.com"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Project 3</h3>
+            <p class="project__description">
+              Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
+              sapiente debitis labore sed ipsam Mollitia repellat illum quod
+              unde beatae Quis
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">SASS</li>
+              <li class="project__stack-item">TypeScript</li>
+              <li class="project__stack-item">React</li>
+            </ul>
+
+            <a
+              href="https://github.com"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://example.com"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </section> -->
+
+
+
+
+
+
+      <!-- Experiences -->
+      <section id="experiences" class="section experiences">
+        <h2 class="section__title">Experiences</h2>
+
+        <div class="experiences__grid">
+          <div class="experience">
+            <h3>NTTDATA</h3>
+            <h5>July 2024 - Present</h5>
+            <h5>Junior System Engineer</h5>
+            <p class="experience__description">
+
+
+              <ul class="experience__stack">
+                <li class="experience__stack-item">CBM Net2 System</li>
+                <li class="experience__stack-item"></li>
+                <li class="experience__stack-item"></li>
+              </ul>
+              
+            </p>
+          </div><br>
+
+          <div class="experience">
+            <h3>Myanmar Information Technology ( MIT)</h3>
+            <h5>September 2022 - June 2024</h5>
+            <h5>Developer</h5>
+            <p class="experience__description">
+
+
+              <ul class="experience__stack">
+                <li class="experience__stack-item">Designed, developed, and maintained Core Banking APIs and Digital Financial Solutions using Java and Spring Boot, adhering to RESTful API design principles.</li>
+                <li class="experience__stack-item">Conducted rigorous API testing using Postman and JMeter, ensuring functionality, reliability, and performance.</li>
+                <li class="experience__stack-item">Integrated APIs with third-party services and databases, ensuring seamless communication and data consistency.</li>
+                <li class="experience__stack-item">Implemented security measures such as authentication and authorization to ensure API integrity and data confidentiality.</li>
+                <li class="experience__stack-item">Provided on-site deployment support, troubleshooting issues, and facilitating server maintenance.</li>
+                <li class="experience__stack-item">Spearheaded the development of the Skynet Web Portal, implementing data filtering and report generation to enhance decision-making processes.</li>
+              </ul>
+            </p>
+          </div><br>
+
+          <div class="experience">
+            <h3>ACE Data System</h3>
+            <h5>April 2022 - August 2022</h5>
+            <h5>On Job Training</h5>
+            <p class="experience__description">
+
+
+              <ul class="experience__stack">
+                <li class="experience__stack-item">Contributed to the development and maintenance of business applications using Java, Spring Framework, and RDBMS.</li>
+                <li class="experience__stack-item">Developed a Job Recruitment and Offering Management System using JSP, Thymeleaf, and JavaScript.</li>
+                <li class="experience__stack-item">Participated in on-site support for server deployments, ensuring smooth system integration and troubleshooting issues as needed.</li>
+              </ul>
+            </p>
+          </div><br>
+
+          <div class="experience">
+            <h3>Mo Money Payment Myanmar</h3>
+            <h5>December 2021 - April 2022</h5>
+            <h5>Internship</h5>
+            <p class="experience__description">
+
+
+              <ul class="experience__stack">
+                <li class="experience__stack-item">Developed and managed Java applications, gaining hands-on experience with Core Java and Spring Framework.</li>
+                <li class="experience__stack-item">Conducted database management and system integration for digital payment solutions.</li>
+              </ul>
+            </p>
+          </div><br>
+
+        </div>
+      </section>
+
+
+
+
+
+      
+
+      <!-- Skills -->
+      <section class="section skills" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">Java</li>
+          <li class="skills__list-item btn btn--plain">SQL</li>
+          <li class="skills__list-item btn btn--plain">HTML</li>
+          <li class="skills__list-item btn btn--plain">CSS</li>
+          <li class="skills__list-item btn btn--plain">JavaScript</li>
+          <li class="skills__list-item btn btn--plain">Spring Boot</li>
+          <li class="skills__list-item btn btn--plain">Spring MVC</li>
+          <li class="skills__list-item btn btn--plain">Hibernate</li>
+          <li class="skills__list-item btn btn--plain">jQuery</li>
+          <li class="skills__list-item btn btn--plain">AngularJS</li>
+          <li class="skills__list-item btn btn--plain">Bootstrap</li>
+          <li class="skills__list-item btn btn--plain">Thymeleaf</li>
+          <li class="skills__list-item btn btn--plain">MySQL</li>
+          <li class="skills__list-item btn btn--plain">PostgreSQL</li>
+          <li class="skills__list-item btn btn--plain">SQL Server Management</li>
+          <li class="skills__list-item btn btn--plain">Git</li>
+          <li class="skills__list-item btn btn--plain">Apache Tomcat</li>
+          <li class="skills__list-item btn btn--plain">JMeter</li>
+          <li class="skills__list-item btn btn--plain">Postman</li>
+          <li class="skills__list-item btn btn--plain">JasperReports</li>
+          <li class="skills__list-item btn btn--plain">RESTFUL APIs</li>
+          <li class="skills__list-item btn btn--plain">JSON</li>
+          <li class="skills__list-item btn btn--plain">XML</li>
+          <li class="skills__list-item btn btn--plain">Shell Script</li>
+          <li class="skills__list-item btn btn--plain">JUnit</li>
+        </ul>
+      </section>
+
+      <!-- Contact -->
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <a href="mailto:zwelwinoodevtech@gmail.com">
+          <span class="btn btn--outline">Email me</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a
+        href="https://zwe-lwin-00.github.io/zwelwinoo.github.io/"
+        class="link footer__link"
+      >
+        Created By Zwe Lwin Oo
+      </a>
+    </footer>
+
+    <div class="scroll-container">
+      <div class="scroll-top">
+        <a aria-label="Scroll up" href="#top">
+          <i aria-hidden="true" class="fas fa-arrow-up"></i>
+        </a>
+      </div>
     </div>
-    
-    </section>
-</main>
 
-</body>
-
-<script src="js/index.js"></script> 
+    <script src="./script.js"></script>
+  </body>
 </html>
