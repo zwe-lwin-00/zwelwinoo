@@ -426,10 +426,12 @@ main {
   text-align: center;
   box-shadow: var(--shadow);
   transition: transform 0.2s linear;
+  border : 1px solid white;
 }
 
 .experience:hover {
   transform: translateY(-7px);
+  border-color: #2978b5;
 }
 
 .experience__description {
