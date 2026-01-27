@@ -1,6 +1,6 @@
-# Zwe Lwin Oo - Portfolio
+# Portfolio - Zwe Lwin Oo
 
-A modern, VS Code IDE-themed developer portfolio built with React and Vite.
+A modern VS Code IDE-themed developer portfolio built with React and Vite.
 
 ## Features
 
@@ -8,34 +8,18 @@ A modern, VS Code IDE-themed developer portfolio built with React and Vite.
 - 🌓 Dark/Light mode toggle
 - 📱 Fully responsive
 - ⚡ Fast and optimized
-- 🎯 Modern React with Vite
 
 ## Tech Stack
 
-- React 18
-- Vite
-- Font Awesome Icons
-- CSS3 with CSS Variables
+React 18 | Vite | Font Awesome | CSS3
 
 ## Development
 
 ```bash
-# Install dependencies
 npm install
-
-# Run development server
 npm run dev
-
-# Build for production
 npm run build
-
-# Preview production build
-npm run preview
 ```
-
-## Deployment
-
-This portfolio is automatically deployed to GitHub Pages on every push to the main branch.
 
 ## License
 
