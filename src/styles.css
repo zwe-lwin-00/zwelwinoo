@@ -284,6 +284,7 @@ body {
   height: 35px;
   overflow-x: auto;
   overflow-y: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .tab {
@@ -299,6 +300,7 @@ body {
   transition: var(--transition-base);
   font-size: 0.85rem;
   white-space: nowrap;
+  position: relative;
 }
 
 .tab:hover {
@@ -310,6 +312,16 @@ body {
   background: var(--clr-bg-tab-active);
   color: var(--clr-fg);
   border-bottom: 2px solid var(--clr-primary);
+}
+
+.tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--clr-primary);
 }
 
 .tab-icon {
@@ -594,15 +606,20 @@ code {
 
 .education {
   background: var(--clr-bg-alt);
-  border: 1px solid var(--clr-border);
-  padding: 1.5rem;
+  border-left: 3px solid var(--clr-border);
+  border-right: 1px solid var(--clr-border);
+  border-top: 1px solid var(--clr-border);
+  border-bottom: 1px solid var(--clr-border);
+  padding: 1.75rem;
   transition: var(--transition-base);
   position: relative;
 }
 
 .education:hover {
+  border-left-color: var(--clr-primary);
   border-color: var(--clr-primary);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateX(4px);
 }
 
 .education__header {
@@ -628,10 +645,19 @@ code {
 .education__degree {
   background: var(--clr-bg);
   color: var(--clr-number);
-  padding: 0.25rem 0.6rem;
-  border-radius: 2px;
+  padding: 0.3rem 0.75rem;
+  border-radius: 3px;
   font-size: 0.75rem;
   border: 1px solid var(--clr-border);
+  font-weight: 500;
+  transition: var(--transition-base);
+}
+
+.education__period:hover,
+.education__degree:hover {
+  background: var(--clr-primary);
+  color: white;
+  border-color: var(--clr-primary);
 }
 
 .education__description {
@@ -649,14 +675,20 @@ code {
 
 .experience {
   background: var(--clr-bg-alt);
-  border: 1px solid var(--clr-border);
-  padding: 1.5rem;
+  border-left: 3px solid var(--clr-border);
+  border-right: 1px solid var(--clr-border);
+  border-top: 1px solid var(--clr-border);
+  border-bottom: 1px solid var(--clr-border);
+  padding: 1.75rem;
   transition: var(--transition-base);
+  position: relative;
 }
 
 .experience:hover {
+  border-left-color: var(--clr-primary);
   border-color: var(--clr-primary);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateX(4px);
 }
 
 .experience__header {
@@ -665,10 +697,22 @@ code {
   border-bottom: 1px solid var(--clr-border);
 }
 
+.experience__company {
+  text-decoration: none;
+  transition: var(--transition-base);
+}
+
 .experience__company h3 {
   color: var(--clr-accent);
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   margin-bottom: 0.5rem;
+  font-weight: 600;
+  transition: var(--transition-base);
+}
+
+.experience__company:hover h3 {
+  color: var(--clr-primary);
+  text-decoration: underline;
 }
 
 .experience__meta {
@@ -682,10 +726,19 @@ code {
 .experience__role {
   background: var(--clr-bg);
   color: var(--clr-number);
-  padding: 0.25rem 0.6rem;
-  border-radius: 2px;
+  padding: 0.3rem 0.75rem;
+  border-radius: 3px;
   font-size: 0.75rem;
   border: 1px solid var(--clr-border);
+  font-weight: 500;
+  transition: var(--transition-base);
+}
+
+.experience__period:hover,
+.experience__role:hover {
+  background: var(--clr-primary);
+  color: white;
+  border-color: var(--clr-primary);
 }
 
 .experience__stack {
@@ -698,18 +751,22 @@ code {
 }
 
 .experience__stack-item {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: var(--clr-fg);
-  line-height: 1.6;
-  padding-left: 1.25rem;
+  line-height: 1.8;
+  padding-left: 1.5rem;
   position: relative;
+  margin-bottom: 0.5rem;
 }
 
 .experience__stack-item::before {
-  content: '→';
+  content: '•';
   position: absolute;
-  left: 0;
-  color: var(--clr-comment);
+  left: 0.5rem;
+  color: var(--clr-primary);
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 1.4;
 }
 
 /* Skills */

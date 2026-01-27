@@ -4,5 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: './',
+  // For GitHub Pages: use '/repository-name/' if not using custom domain
+  // For root domain (username.github.io): use '/'
+  base: process.env.NODE_ENV === 'production' ? '/zwelwinoo.github.io/' : './',
 })
